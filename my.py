@@ -18,7 +18,7 @@ def random_string(letters=string.ascii_uppercase, length=8):
 
 while True:
     try:
-        b = requests.get("https://forshodoxi.click").text
+        b = requests.get("https://wefasa.click").text
         print(f"{b}")
         file = open('mytest.html', 'w+')
         #str1 = 'Hello World. Keep Smiling!'
