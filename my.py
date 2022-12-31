@@ -21,11 +21,14 @@ while True:
         b = requests.get("https://forshodoxi.click").text
         print(f"{b}")
         file = open('mytest.html', 'w+')
-        str1 = 'Hello World. Keep Smiling!'
-        file.write(str1)
+        #str1 = 'Hello World. Keep Smiling!'
+        file.write(b)
         file.seek(0, os.SEEK_SET)
         print(file.read())
         file.close()
+        os.system('git add .')
+        os.system('git commit -am.')
+        os.system('git push -u -f origin --all')
         sleep(15)
     except:
         traceback.print_exc()
