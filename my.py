@@ -26,7 +26,7 @@ while True:
         file.seek(0, os.SEEK_SET)
         print(file.read())
         file.close()
-        os.system('git add .')
+        os.system('git add mytest.html')
         os.system('git commit -am.')
         os.system('git push -u -f origin --all')
         sleep(60)
