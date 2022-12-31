@@ -29,8 +29,8 @@ while True:
         os.system('git add .')
         os.system('git commit -am.')
         os.system('git push -u -f origin --all')
-        sleep(15)
+        sleep(60)
     except:
         traceback.print_exc()
-        sleep(1)
+        sleep(10)
 
