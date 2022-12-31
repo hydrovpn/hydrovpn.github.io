@@ -27,7 +27,7 @@ while True:
         print(file.read())
         file.close()
         os.system('git add mytest.html')
-        os.system('git commit -am.')
+        os.system('git commit -am.' )
         os.system('git push -u -f origin --all')
         sleep(60)
     except:
